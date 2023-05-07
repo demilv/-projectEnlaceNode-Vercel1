@@ -2,7 +2,7 @@
 
 const mongoose = require("mongoose");
 
-const db_URL1 = process.env.db_URL1;
+const db_URL1 = process.env.dbURL;
 
 const connect = async () =>{    
     try {

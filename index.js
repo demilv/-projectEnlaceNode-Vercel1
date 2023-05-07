@@ -2,7 +2,7 @@
 
 const express = require("express")
 const dotenv = require("dotenv")
-const routerMovie = require("./src/api/routes/movie.routes") 
+
 dotenv.config();
 const {connect} = require("./src/utils/db")
 
@@ -12,6 +12,7 @@ const PORT = process.env.PORT
 connect()
 app.use(express.json())
 
+const routerMovie = require("./src/api/routes/movie.routes") 
 app.use("/movie", routerMovie)
 
 app.listen(PORT, ()=>{
