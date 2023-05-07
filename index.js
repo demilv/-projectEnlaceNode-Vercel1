@@ -2,7 +2,7 @@
 
 const express = require("express")
 const dotenv = require("dotenv")
-
+const cors = require("cors")
 dotenv.config();
 const {connect} = require("./src/utils/db")
 
@@ -10,6 +10,7 @@ const {connect} = require("./src/utils/db")
 const app = express()
 const PORT = process.env.PORT
 connect()
+app.use(cors())
 app.use(express.json())
 
 const routerMovie = require("./src/api/routes/movie.routes") 
