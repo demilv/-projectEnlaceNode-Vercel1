@@ -1,9 +1,12 @@
+//Llamadas a paquetes instalados
+
 const express = require("express")
 const dotenv = require("dotenv")
-const routerMovie = require("./src/api/routes/movie.routes") // Terminar esta linea
+const routerMovie = require("./src/api/routes/movie.routes") 
 dotenv.config();
 const {connect} = require("./src/utils/db")
 
+//Elementos necesarios para establecer la conexion a la base de datos
 const app = express()
 const PORT = process.env.PORT
 connect()

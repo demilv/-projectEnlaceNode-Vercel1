@@ -1,3 +1,5 @@
+//Fichero semilla para inicializar la base de datos
+
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const Pelicula = require('../api/models/movie.model');

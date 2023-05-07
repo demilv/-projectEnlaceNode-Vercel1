@@ -1,3 +1,5 @@
+//Fichero de rutas
+
 const express = require('express');
 const {getPeliculas, getPeliculasId, getPeliculasTitle, getPeliculasGenre, getPeliculas2010} = require('../controllers/movie.controller');
 const router = express.Router();
